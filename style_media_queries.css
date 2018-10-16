@@ -1,0 +1,653 @@
+@media screen and (max-width: 1550px) {
+    /**************GENERAL************/
+    #main_header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;  
+        margin: 0 auto; 
+        list-style: none;
+    }
+
+    /**************SLIDER*************/
+    #slider_description h1 {
+        width: 55%;
+    }
+
+    #slider_description p {
+        font-size: 15px;
+    } 
+
+    #slider_description button {
+        height: 40px;
+        width: 125px; 
+        font-size: 17px;
+    }
+
+    #left {
+        padding: 20px 15px 20px 50px;
+        font-size: 30px;   
+    }
+
+    #right {
+        padding: 20px 50px 20px 15px;
+        font-size: 30px;     
+    }
+
+    /*************SERVICES*************/
+    #services_content { 
+        margin-left: 0px;   
+    }
+
+    #services_content #computer {
+        width: 50%;
+        margin-right: 0px;
+    }
+       
+    #services_content #services_list {
+        width: 50%;        
+    }
+
+    #services_list .services_description {
+        width: 550px;  
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    /**************HEADER*************/
+    #main_header .logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    /*************SLIDER************/
+    #slider_description h1 {
+        width: 45%;
+    }
+
+    #slider_description p {
+        font-size: 14px;
+    } 
+
+    #left {
+        right: 97%;
+    }
+
+    #right {
+        left: 97%;   
+    }
+
+    /*************SERVICES*************/
+    #services_content {
+        flex-direction: column; 
+        justify-content: space-around;
+        align-items: center;          
+    }
+
+    #services_content #computer {
+        justify-content: center;
+        align-items: center;
+        width: 50%;   
+    }
+
+    #services_content #services_list {
+        display: flex;
+        justify-content: center;
+        align-content: center; 
+    }
+    
+    /**************CONTACT*************/
+    #contact_content{
+        justify-content: center;
+        align-items: center;
+    }
+        
+    #formulaire form {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    /*************GENERAL*************/
+    section {
+        padding-top: 80px;       
+    }
+
+    /**************HEADER*************/
+    #main_header {
+        height: 80px;
+    }
+
+    #main_header nav a {  
+        padding : 28px 18px 0 18px; 
+    }
+
+    /**************SLIDER*************/
+    #slider_description {
+        margin-left: 4.4%;
+    }
+
+    #slider_description h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    #slider_description p {
+        width: 55%;
+        line-height: 100%;
+        font-size: 13px;
+        margin-bottom: 20px;
+    } 
+
+    #slider_description button {
+        height: 36px;
+        width: 100px; 
+        font-size: 15px;
+    }
+
+    #left {
+        right: 96.5%;
+    }
+
+    #right {
+        left: 96.5%;    
+    }
+
+    #timeline hr {
+        margin-top: 234%;
+    }
+
+    /*************SERVICES*************/
+    #services header h1 {
+        font-size: 38px;    
+    }
+    
+    #services header p {
+        width: 600px;
+        font-size: 14px;
+    }
+
+    #services_list .services_description {
+        width: 450px;  
+    }
+    
+    #services_list .services_description h3 {
+        font-size: 18px;
+    }
+    
+    #services_list .services_description p {
+        font-size: 14px; 
+    }
+
+    /************PORTFOLIO************/    
+    #portfolio header h1 {
+        font-size: 38px;    
+    }
+    
+    #portfolio header p {
+        width: 600px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 979px) {
+    /**************HEADER*************/
+    #main_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main_header .logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 400px;
+    }
+
+    #main_header nav ul{
+        display: flex;
+        justify-content: flex-end;
+        width: 450px;    
+    }
+
+    /**************SLIDER*************/
+    #slider_description h1 {
+        width: 47%;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    #slider_description p {
+        width: 37%;
+        line-height: 100%;
+        font-size: 11px;
+        margin-bottom: 20px;
+    } 
+
+    #slider_description button {
+        height: 30px;
+        width: 85px; 
+        font-size: 13px;
+    }
+
+    #left {
+        right: 96.7%;
+        padding: 15px 10px 15px 45px;
+        font-size: 25px;   
+    }
+
+    #right {
+        left: 96.7%;
+        padding: 15px 45px 15px 10px;
+        font-size: 25px;     
+    }
+
+
+@media only screen and (max-width: 767px) {
+    /*************GENERAL*************/
+    section {
+        padding-top: 70px;       
+    }
+
+    .horizontal_rule {
+        width: 100px;
+    }
+
+    .horizontal_rule .fas {
+        font-size: 12px; 
+    }   
+      
+    /**************HEADER************/
+    #main_header {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        padding: 0;
+        height: 70px; 
+    }
+
+    #main_header .logo {
+        display: flex;
+        justify-content: center;
+        width: 250px;      
+    }
+
+    #main_header .logo img {
+        width: 175px;
+        height: 40px;
+    }
+
+    #main_header nav {
+        width: 350px;
+    }
+
+    #main_header nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #main_header nav a {
+        font-size: 13px;
+        padding : 0px 12px 0 12px; 
+    }
+
+    #main_header nav a:hover {
+        border: none;
+    }
+    
+    /**************SLIDER*************/
+    #slider_content {
+        animation: none;
+    }
+
+    #slider_content img {
+        width: 770px;
+    }
+
+    #bg-2 {
+        display: none;
+    }
+
+    #slider_description {
+        width: 400px;
+    }
+
+    #slider_description h1 {
+        width: 100%;
+        font-size: 25px; 
+    }
+
+    #slider_description p {
+        width: 100%;
+        font-size: 12px;       
+    } 
+
+    #slider_description button {
+        height: 27px;
+        width: 82px; 
+        font-size: 12px;
+    }
+
+    #left, #right {
+        display: none;
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    /*************SERVICES*************/
+    #services header h1 {
+        font-size: 32px;    
+    }
+    
+    #services header p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    #services_content #computer {
+        width: 360px;   
+    }
+
+    #services_content #computer img {
+        width: 100%;
+    }
+    #services_list .services_description {
+        width: 320px;  
+    }
+
+    #services_list .icones { 
+        width: 90px;
+    }
+    
+    #services_list .icones .fa-chart-line, .icones .fa-cubes {
+        padding: 16px;
+        font-size: 25px;
+    }
+    
+    #services_list .icones .fa-chart-pie {
+        padding: 17px;
+        font-size: 20px;
+    }
+    
+    #services_list .icones .fa-circle {
+        right: 22px;
+        top: 30px;
+        font-size: 11px;  
+        border: 3px solid white;  
+    }
+
+    /************PORTFOLIO************/  
+    #portfolio {
+        padding-bottom: 70px;
+    }
+
+    #portfolio header h1 {
+        font-size: 32px;    
+    }
+    
+    #portfolio header p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    #portfolio_content label {
+        height: 38px;
+        width: 95px;
+        font-size: 15px;
+    }
+
+    #portfolio_content label:hover {
+        height: 35px;   
+    }
+
+    #portfolio input.input-type-all-works:checked ~ nav label.label-type-all-works,
+    #portfolio input.input-type-creative:checked ~ nav label.label-type-creative,
+    #portfolio input.input-type-corporate:checked ~ nav label.label-type-corporate,
+    #portfolio input.input-type-portfolio:checked ~ nav label.label-type-portfolio {
+        height: 35px;    
+    }
+
+    #portfolio input.input-type-all-works:checked ~ nav label.label-type-all-works::after,
+    #portfolio input.input-type-creative:checked ~ nav label.label-type-creative::after,
+    #portfolio input.input-type-corporate:checked ~ nav label.label-type-corporate::after,
+    #portfolio input.input-type-portfolio:checked ~ nav label.label-type-portfolio::after {
+        top: 38px;
+        left: 36px;
+    }
+
+    #portfolio_images li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #portfolio_images li a {
+        width: 290px;
+        height: 200px;
+    }
+
+    #portfolio_images figure {
+        height: 200px;
+        margin: 20px 20px 20px 0px;   
+    }
+
+    #portfolio_images figcaption { 
+        opacity: 1; 
+    }
+     
+    #portfolio_images figcaption #eyes {
+        display: none;    
+    }
+    
+    /**************CONTACT*************/
+    #contact_content {
+        align-items: flex-start; 
+    }
+
+    #contact_content iframe {
+        height: 560px;
+    }
+
+    /************FOOTER************/
+    footer {
+        height: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    /**************HEADER************/
+    #main_header nav a {
+        padding : 0 9px 0 9px;
+    }    
+  
+    /**************SLIDER*************/
+    #slider_description {
+        width: 400px;   
+        margin-left: 0;
+    }
+
+    #slider_description h1 {
+        width: 250px;
+        font-size: 24px;  
+    }
+
+    #slider_description p {
+        width: 200px;
+        font-size: 12px; 
+    } 
+
+    #slider_description button {
+        height: 24px;
+        width: 74px; 
+        font-size: 11px;
+    }
+
+     /*************SERVICES*************/
+    #services header h1 {
+        font-size: 30px;    
+    }
+    
+    #services header p {
+        width: 250px;
+        font-size: 12px;
+    }
+
+    #services_content {
+        padding: 0;
+    }
+
+    #services_content #computer {
+        width: 320px;     
+    }   
+
+    #services_list .services_description {
+        width: 200px;  
+    }
+    
+    #services_list .services_description p {
+        font-size: 12px; 
+    }
+
+    #services_list .icones { 
+        display: none;
+    }
+
+    /************PORTFOLIO************/  
+    #portfolio header {
+       margin-bottom: 25px;
+    }
+
+    #portfolio header h1 {
+        font-size: 30px;     
+    }
+    
+    #portfolio header p {
+        width: 250px;
+        font-size: 12px;
+    }
+
+    #portfolio_content label {
+        height: 36px;
+        width: 60px;
+        font-size: 12px;
+    }
+
+    #portfolio_content label:hover {
+        height: 34px;   
+    }
+
+    #portfolio input.input-type-all-works:checked ~ nav label.label-type-all-works,
+    #portfolio input.input-type-creative:checked ~ nav label.label-type-creative,
+    #portfolio input.input-type-corporate:checked ~ nav label.label-type-corporate,
+    #portfolio input.input-type-portfolio:checked ~ nav label.label-type-portfolio {
+        height: 34px;    
+    }
+
+    #portfolio input.input-type-all-works:checked ~ nav label.label-type-all-works::after,
+    #portfolio input.input-type-creative:checked ~ nav label.label-type-creative::after,
+    #portfolio input.input-type-corporate:checked ~ nav label.label-type-corporate::after,
+    #portfolio input.input-type-portfolio:checked ~ nav label.label-type-portfolio::after {
+        top: 36px;
+        left: 19px;
+    }
+
+    #portfolio_images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;   
+        padding: 0; margin: 0;
+    }
+
+    #portfolio_images li a {
+        width: 200px;
+        height: 150px;
+        margin-right:25px; 
+        margin-left: 25px;
+    }
+
+    #portfolio_images figure {
+        display: flex;
+        align-items: flex-end;
+        width: 200px;
+        height: 150px;
+    }
+
+    #portfolio_images img {
+        width: 100%; 
+    }
+
+    #portfolio_images figcaption {
+        width: 200px;
+        height: 60px;
+        margin: 0;
+        padding: 0;   
+    }
+
+    #portfolio_images figcaption h4 {
+        font-family: 'robotobold';
+        font-size: 14px;
+        line-height: 0;
+        margin-left: 10%;    
+    }
+    
+    #portfolio_images figcaption p {
+        font-family: 'robotomedium';
+        font-size: 13px;
+        line-height: 80%;  
+        margin-left: 10%;  
+    }
+
+    /**************CONTACT*************/
+    #contact_content iframe {
+        height: 480px;
+    }
+
+    #formulaire form {
+        width: 270px;
+        height: 480px; 
+    }
+
+    #formulaire form fieldset{      
+       justify-content: center;
+    }
+    
+    #formulaire form h3 {
+        font-size: 22px;
+    }
+    
+    #formulaire form p {
+        font-size: 14px;
+    }
+    
+    #formulaire form input {
+        padding: 5px;
+        width: 230px;
+    }
+    
+    #formulaire form textarea {
+        width: 230px;
+    }
+    
+    #formulaire form button {
+        
+        height: 30px;
+        width: 110px;
+        font-size: 13px;
+    }
+
+    /************FOOTER*************/
+    footer {
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 13px;     
+    }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <link rel="icon" href="images/logo-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!--Feuille CSS chargée pour les résolutions plus petites-->
+    <link rel="stylesheet" href="style_media_queries.css">
+    <title>Maquette du site de WebAgency</title>
+</head>
+
+<body>
+    <main>
+        <header id="main_header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo de WebAgency">
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#slideshow">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="slideshow">
+            <div id="slider_content">
+                <img src="images/slider/bg1.jpg" alt="">
+                <img id="bg-2" src="images/slider/bg2.jpg" alt="">
+            </div>
+
+            <div id="slider_description">
+                <h1>
+                    <span id="name_agency">WebAgency</span> : l'agence de tous vos projets !</h1>
+                <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                <button>Plus d'infos</button>
+            </div>
+
+            <i id="left" class="fas fa-angle-left"></i>
+
+            <i id="right" class="fas fa-angle-right"></i>
+
+
+            <div id="timeline">
+                <hr>
+            </div>
+        </section>
+
+
+        <section id="services">
+            <header>
+                <h1>Nos Services</h1>
+                <div class="horizontal_rule">
+                    <hr>
+                    <i class="fas fa-circle"></i>
+                </div>
+                <p>La WebAgency réalise pour vous des sites internet ergonomiques et efficaces utilisant les dernières technologies
+                    du web afin de satisfaire au mieux tous vos utilisateurs. </p>
+            </header>
+
+            <div id="services_content">
+                <div id="computer">
+                    <img src="images/main-feature.png" alt="">
+                </div>
+
+                <div id="services_list">
+                    <ul>
+                        <li>
+                            <div class="icones">
+                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+
+                            <div class="services_description">
+                                <h3>UX design</h3>
+                                <p>Chez WebAgency, nous prenons en compte tous les besoins et les attentes de l’utilisateur.
+                                    Nous faisons en sorte que votre contenu soit, accessible, facile à prendre en main et
+                                    productif, qu'il gagne sa confiance et l'amène à concrétiser son but, le tout sans effort
+                                    et dans un environnement agréable.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icones">
+                                <i class="fas fa-cubes"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+
+                            <div class="services_description">
+                                <h3>UI design</h3>
+                                <p>Nous nous chargeons également de la conception générale de l’interface, de la clarté de la
+                                    navigation et de son optimisation, mais aussi de la qualité des contenus afin que le
+                                    tout soit le plus efficace possible. Nous mettons en œuvre nos compétences techniques
+                                    et notre créativité pour concevoir des maquettes graphiques correspondant aux souhaits
+                                    de nos clients.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icones">
+                                <i class="fas fa-chart-pie"></i>
+                                <i class="fas fa-circle"></i>
+                            </div>
+
+                            <div class="services_description">
+                                <h3>SEO</h3>
+                                <p>Notre agence s'engage à optimiser au maximum votre site pour les moteurs de recherche, afin
+                                    qu'il figure à la meilleure position possible. Le référencement naturel est indispensable
+                                    à toute entreprise qui souhaite booster son chiffre d'affaire car désormais, les emplacements
+                                    les plus rentables sont virtuels !</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio">
+            <header>
+                <h1>Nos projets </h1>
+                <div class="horizontal_rule">
+                    <hr>
+                    <i class="fas fa-circle"></i>
+                </div>
+                <p>La WebAgency a su s'imposer au fil des années dans le domaine de la création de sites web, dont voici quelques
+                    exemples qui pourront vous permettre d'avoir une idée plus précise de ce que serait le vôtre.
+                </p>
+            </header>
+
+            <div id="portfolio_content">
+                <!--Boutons de type radio permettant de trier les projets par catégories-->
+                <input id="type-all-works" name="radio-1" type="radio" class="input-type-all-works" checked="checked" />
+                <input id="type-creative" name="radio-1" type="radio" class="input-type-creative" />
+                <input id="type-corporate" name="radio-1" type="radio" class="input-type-corporate" />
+                <input id="type-portfolio" name="radio-1" type="radio" class="input-type-portfolio" />
+
+                <!--Style des boutons radio-->
+                <nav>
+                    <label for="type-all-works" class="label-type-all-works">All Works </label>
+                    <label for="type-creative" class="label-type-creative">Creative</label>
+                    <label for="type-corporate" class="label-type-corporate">Corporate</label>
+                    <label for="type-portfolio" class="label-type-portfolio">Portfolio</label>
+                </nav>
+
+                <ul id="portfolio_images">
+                    <li>
+                        <a class="icone-type-creative" href="images/portfolio/01.jpg">
+                            <figure>
+                                <img src="images/portfolio/01.jpg" alt="">
+                                <figcaption>
+                                    <h4>Disguise Passion</h4>
+                                    <p>Le déguisement est un art de vie !</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a class="icone-type-creative" href="images/portfolio/02.jpg">
+                            <figure>
+                                <img src="images/portfolio/02.jpg" alt="">
+                                <figcaption>
+                                    <h4>PinkBunny</h4>
+                                    <p>Création de cadeaux sur mesure</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="icone-type-corporate" href="images/portfolio/03.jpg">
+                            <figure>
+                                <img src="images/portfolio/03.jpg" alt="">
+                                <figcaption>
+                                    <h4>Original Pompadour</h4>
+                                    <p>Slicked Back Since 1950</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a class="icone-type-portfolio" href="images/portfolio/04.jpg">
+                            <figure>
+                                <img id="active" src="images/portfolio/04.jpg" alt="">
+                                <figcaption>
+                                    <h4>HD Impression</h4>
+                                    <p>Les impressions qui font la différence !</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="icone-type-corporate" href="images/portfolio/05.jpg">
+                            <figure>
+                                <img src="images/portfolio/05.jpg" alt="">
+                                <figcaption>
+                                    <h4>Shopping Bag</h4>
+                                    <p>Vente de sac connectés !</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a class="icone-type-corporate" href="images/portfolio/06.jpg">
+                            <figure>
+                                <img src="images/portfolio/06.jpg" alt="">
+                                <figcaption>
+                                    <h4>Artvoyage</h4>
+                                    <p>L'architecte de vos voyages !</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="icone-type-creative" href="images/portfolio/07.jpg">
+                            <figure>
+                                <img src="images/portfolio/07.jpg" alt="">
+                                <figcaption>
+                                    <h4>Stellar Discovery</h4>
+                                    <p>Application d'exploration spatiale</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a class="icone-type-portfolio" href="images/portfolio/08.jpg">
+                            <figure>
+                                <img src="images/portfolio/08.jpg" alt="">
+                                <figcaption>
+                                    <h4>Be Theme</h4>
+                                    <p>Adoptez un style sobre et élégant !</p>
+                                    <div class="eyes">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div id="contact_content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807224!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1534768118201"></iframe>
+                <div id="formulaire">
+                    <form action="#">
+                        <fieldset>
+                            <legend>
+                                <h3>Contact Info</h3>
+                                <p>
+                                    <strong>WebAgency SAS</strong>
+                                    <br> 25 Rue d'Hauteville 75010 Paris
+                                    <br>
+                                    <abbr title="Téléphone :">Tel : </abbr>01 02 03 04 05
+                                </p>
+                            </legend>
+                            <label for="nom"></label>
+                            <input type="text" name="nom" id="nom" placeholder="Name" />
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                            <label for="objet"></label>
+                            <input type="text" name="text" id="objet" placeholder="Subject" />
+                            <label for="message"></label>
+                            <textarea name="message" id="message" rows="9" placeholder="Message"></textarea>
+                            <button type="submit">Send Message</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>©2018 WebAgency</p>
+        </footer>
+
+    </main>
+</body>
+
+</html>

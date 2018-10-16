@@ -1,0 +1,680 @@
+
+/*-----------------------------------------GENERAL------------------------------------------------------*/
+@font-face {
+    font-family: 'robotobold';
+    src:url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src:url('fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#main_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 10;    
+    background-color: white;
+    border: 1px solid rgb(145, 145, 145); 
+}
+
+#main_header .logo {
+    width: 550px;   
+}
+
+#main_header nav  {
+    width: 450px;   
+}
+    
+#main_header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;  
+    margin: 0 auto; 
+    list-style: none;
+}
+
+#main_header nav a {  
+    padding : 38px 18px 0 18px; 
+    font-family: 'robotomedium';
+    font-size: 15px;
+    color:#7E7E7E;
+    text-decoration: none;    
+}
+
+#main_header nav a:hover {
+    color: #575757;
+    border-top: 3px solid #5CADD3;
+    transition: color .3s ease-in-out;
+}
+
+section {
+    padding-top: 100px;    
+}
+
+/*Style des barres + des cercles sous les titres*/
+.horizontal_rule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.horizontal_rule hr { 
+    width: 100%;
+    border-width: 1px;
+    color: rgba(240, 240, 240, 0.274) ; 
+} 
+  
+.horizontal_rule .fas {
+    position: absolute;
+    font-size: 15px;    
+    color: #479AC6;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+
+/*------------------------------------------------------------------------*\
+                                 SLIDESHOW                             
+\*------------------------------------------------------------------------*/
+#slideshow {
+    font-family: 'robotobold';  
+    position: relative; 
+ 
+}
+
+/*Règle permettant de définir les étapes du slideshow*/
+@keyframes slider {
+    0%, 24.99%, 50%, 74.99%, 100% { left: 0% }
+    25%, 49.99%, 75%, 99.99% { left: -100% }
+ } 
+
+/*Container des backgrounds du slideshow avec animation*/
+#slider_content {
+    position: relative;
+    animation: 20s slider infinite;
+    width: 200%;
+    overflow: hidden;
+}
+
+/*Backgrounds*/
+#slider_content img {
+    width: 50%;   
+    float: left;
+}
+
+/* Style des textes du slider*/
+#slider_description {
+    position: absolute ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    top: 36%;
+    left: 10%;
+    color: white;
+}
+
+#slider_description h1 {
+    width: 70%;
+    font-size: 45px;
+    text-transform: uppercase;   
+    line-height: 100%;
+    margin-bottom: 17px;
+}
+
+#name_agency {
+    color: #3491B2;
+}
+
+#slider_description p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 0%;
+}
+
+#slider_description button {
+    height: 50px;
+    width: 146px; 
+    font-family: 'robotobold';    
+    font-size: 22px;
+    color: white;
+    background-color: #5CADD3;
+    border: rgb(61, 163, 201);
+    border-radius: 2px;
+    box-shadow: 0px 3px 1px #4494BB;
+    cursor: pointer;
+}
+
+/*Flèche gauche*/
+#left {
+    position: absolute;
+    top: 50%;
+    right: 97.5%;
+    padding: 25px 20px 25px 55px;
+    font-size: 34px;
+    color: white;
+    background-color: rgba(14, 14, 14, 0.2);
+    border-radius: 50%;      
+}
+
+/*Flèche droite*/
+#right {
+    position: absolute;
+    top: 50%;
+    left: 97.5%;
+    padding: 25px 55px 25px 20px;
+    font-size: 34px;
+    color: white;
+    background-color: rgba(14, 14, 14, 0.2);
+    border-radius: 50%;
+}
+
+/*Barre de défilement située en bas de l'image*/
+#timeline {
+    position: absolute;
+    width: 9%;
+    bottom: -8px;
+}
+
+#timeline hr {
+    width: 100%;
+    padding: 2px;
+    background-color:rgb(68, 147, 187);
+    border: none;    
+}
+
+
+/*------------------------------------------------------------------------*\
+                                 SERVICES                             
+\*------------------------------------------------------------------------*/
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+    /*Dégradé permettant d'estomper la différence des background-color des sections*/
+    background: 
+    linear-gradient(
+        to bottom, 
+        #FFFFFF 0%, 
+        #FFFFFF 90%, 
+        rgb(245, 245, 245) 100%
+    );  
+}
+
+#services header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+#services header h1 {
+    font-family: 'robotobold';
+    font-size: 47px;    
+    text-transform: uppercase;    
+    line-height: 0%;
+    color: #272727;
+}
+
+#services header p {
+    width: 700px;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    text-align: center;
+    line-height: 180%; 
+    color:#65696E;
+}
+
+#services_content {
+    display: flex;  
+    width: 100%;  
+    margin-top: 55px; 
+    margin-left: 30px;  
+}
+
+/***************************Image de l'ordinateur*************************/
+#services_content #computer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 47%;
+    margin-right: 100px;
+}
+
+/***************************Container des éléments de droite****************/
+#services_content #services_list {
+    width: 53%;
+    padding-top: 50px;    
+}
+
+#services_list ul {
+    padding: 0;
+}
+
+#services_list li {
+    display: flex;
+    margin-bottom: 17px;
+}
+
+/**************************Icônes Font Awesome****************************/
+#services_list .icones { 
+    position: relative;
+    width: 110px;
+    height: 80px;  
+}
+
+#services_list .icones .fa-chart-line, .icones .fa-cubes {
+    margin-top: 10px;
+    padding: 19px;
+    font-size: 30px;
+    color: #479AC6;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+}
+
+#services_list .icones .fa-chart-pie {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 25px;
+    color: #479AC6;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+}
+
+/*Icône Font Awesome du cercle positionné sur la brodure*/
+#services_list .icones .fa-circle {
+    position: absolute;
+    right: 33px;
+    top: 37px;
+    font-size: 13px;  
+    color: #479AC6;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+/*************************Textes des services*****************************/
+#services_list .services_description {
+    width: 620px;  
+    font-family: 'robotomedium';
+}
+
+#services_list .services_description h3 {
+    font-size: 19px;
+    line-height: 0%;
+    color: #272727;
+}
+
+#services_list .services_description p {
+    font-size: 15px;
+    line-height: 180%;
+    color:#686C71; 
+}
+
+
+/*------------------------------------------------------------------------*\
+                                 PORTFOLIO                             
+\*------------------------------------------------------------------------*/
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    width: 100%;
+    /*Dégradé permettant d'estomper la différence des background-color des sections*/
+    background: 
+    linear-gradient(
+        to bottom, 
+        rgb(245, 245, 245) 0%,
+        rgb(245, 245, 245) 90%,
+        #FFFFFF 100%
+    );   
+}
+
+#portfolio header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#portfolio header h1 {
+    font-family: 'robotobold';
+    text-transform: uppercase;
+    font-size: 47px;
+    line-height: 0%;
+    color: #272727;
+}
+
+#portfolio header p {
+    width: 700px;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    text-align: center;
+    line-height: 180%;    
+    color:#65696E;   
+}
+
+/**********************Contenu de la section portfolio********************/ 
+
+#portfolio_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-------------------------------Boutons radios--------------------------*/
+#portfolio_content nav {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/*Style des boutons radio*/
+#portfolio_content label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 42px;
+    width: 94px;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    text-align: center;
+    color:#64686D;
+    background-color: rgb(222, 222, 222);
+    border: none;
+    cursor: pointer;
+    /*Effet css transition changeant le style du label plus lentement */   
+    transition: box-shadow 0.3s linear, color 0.3s linear;
+    -webkit-transition: box-shadow 0.3s linear, color 0.3s linear;;
+    -moz-transition: box-shadow 0.3s linear, color 0.3s linear;;
+    -ms-transition: box-shadow 0.3s linear, color 0.3s linear;
+    -o-transition: box-shadow 0.3s linear, color 0.3s linear;
+}
+
+/*Arrondissement des coins extérieurs du premier bouton ...*/
+#portfolio_content label:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/*... et du dernier*/
+#portfolio_content label:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*Style des boutons radio survolés*/
+#portfolio_content label:hover {
+    height: 39px;
+    color: #5CADD3;
+    border-bottom: 3px solid #468cad;
+}
+
+/*Style du bouton radio actif*/
+#portfolio input.input-type-all-works:checked ~ nav label.label-type-all-works,
+#portfolio input.input-type-creative:checked ~ nav label.label-type-creative,
+#portfolio input.input-type-corporate:checked ~ nav label.label-type-corporate,
+#portfolio input.input-type-portfolio:checked ~ nav label.label-type-portfolio {
+    height: 39px;
+    color: white;
+    background-color: #5CADD3;
+    border-bottom: 3px solid #468cad;      
+}
+
+/*Personnalisation de la flèche sous le bouton radio actif*/
+#portfolio input.input-type-all-works:checked ~ nav label.label-type-all-works::after,
+#portfolio input.input-type-creative:checked ~ nav label.label-type-creative::after,
+#portfolio input.input-type-corporate:checked ~ nav label.label-type-corporate::after,
+#portfolio input.input-type-portfolio:checked ~ nav label.label-type-portfolio::after {
+    position: absolute;
+    content: " ";
+    height: 0;
+    width: 0;
+    top: 40px;
+    left: 39px;
+    z-index: 1;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #468cad;    
+}
+
+#portfolio input {
+	display: none;
+}
+
+/*Mise en lumière des images correspondant au bouton radio actif */
+#portfolio_content input.input-type-all-works:checked~#portfolio_images a,
+#portfolio_content input.input-type-creative:checked~#portfolio_images .icone-type-creative,
+#portfolio_content input.input-type-corporate:checked~#portfolio_images .icone-type-corporate,
+#portfolio_content input.input-type-portfolio:checked~#portfolio_images .icone-type-portfolio {
+	opacity: 1;
+}
+
+/*Mise en opaque des images correspondant aux boutons radio passifs*/
+#portfolio_content input.input-type-creative:checked ~ #portfolio_images a:not(.icone-type-creative),
+#portfolio_content input.input-type-corporate:checked ~ #portfolio_images a:not(.icone-type-corporate),
+#portfolio_content input.input-type-portfolio:checked ~ #portfolio_images a:not(.icone-type-portfolio) {
+	opacity: 0.1;
+}
+
+/*-------------------------Images du portfolio---------------------------*/
+#portfolio_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+#portfolio_images li {
+    display: flex;
+}
+
+#portfolio_images li a {
+    color: white; 
+    text-decoration: none;
+}
+
+/*Style des images*/
+#portfolio_images figure {
+    display: flex;
+    align-items: flex-end;
+    width: 280px;
+    height: 190px;
+    margin: 20px;   
+}
+
+#portfolio_images img {
+    width: 100%;    
+}
+
+/*Style des figcaption*/
+#portfolio_images figcaption {
+    position: absolute;
+    width: 260px;
+    height: 58px;
+    padding : 0px 10px 10px 10px; 
+    background-color: rgba(0, 0, 0, 0.507) ;     
+    opacity: 0; 
+    /*Effet css transition faisant disparaître les figcaption plus lentement*/
+    -webkit-transition:opacity 0.3s linear;
+    -moz-transition:opacity 0.3s linear;
+    -ms-transition:opacity 0.3s linear ;
+    -o-transition:opacity 0.3s linear;
+    transition:opacity 0.3s linear;
+}
+
+/*Apparition de l'élément figcaption dès que l'élément figure est survolé*/
+#portfolio_images figure:hover figcaption {
+   position: absolute;
+   color: white;
+   opacity: 1;
+}
+
+#portfolio_images figcaption h4 {
+    font-family: 'robotobold';
+    line-height: 0;    
+}
+
+#portfolio_images figcaption p {
+    font-family: 'robotomedium';
+    font-size: 0.9em;
+    line-height: 0;    
+}
+
+/*Position et style de l'icône oeil de la figcaption*/
+#portfolio_images figcaption #eyes {
+    position: relative;    
+}
+
+#portfolio_images figcaption i {
+    position: absolute;
+    font-size: 12px;
+    left: 215px;
+    bottom: 35px;
+    padding: 12px;
+    color: white;
+    background-color: #4692B1;
+    border: 2px solid white;    
+    border-radius: 100%;   
+}
+
+
+/*-------------------------------------------------------------------------*\
+                                    MAP                                     
+\*-------------------------------------------------------------------------*/
+#contact {
+    width: 100%;   
+}
+
+/*Effet filtre bleu de la carte : bgd bleu sur le container et opacity sur la carte*/
+#contact_content{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgb(90, 164, 199); 
+}
+
+#contact_content iframe {
+    width: 100%;
+    height: 800px;
+    opacity: 0.7;
+}
+
+#contact_content #formulaire {
+    position: absolute;  
+}
+
+/*Style du formulaire de contact*/
+#formulaire form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    height: 560px;
+    margin: 60px 180px 0 0;
+    padding: 0 7px 0 7px; 
+    font-family: 'robotomedium';
+    background-color:rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+#formulaire form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+#formulaire form h3 {
+    font-size: 25px;
+    line-height: 0;
+}
+
+#formulaire form p {
+    font-size: 15px;
+    color:#65696E;
+}
+
+#formulaire form input {
+    padding: 10px;
+    width: 320px;
+    margin-bottom: 15px;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    color:#65696E;
+    border: 0.9px solid lightgray;
+    border-radius: 3px;
+}
+
+#formulaire form textarea {
+    width: 330px;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    padding: 10px 0 0 10px;
+    margin-bottom:15px;
+    color:#65696E;
+    border: 0.9px solid lightgray;   
+}
+
+#formulaire form button {
+    height: 40px;
+    width: 120px;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: #5CADD3;
+    border-bottom: 3px solid #468cad; 
+    border-right:none;   
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------------------------*\
+                                 FOOTER                            
+\*------------------------------------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+}
+
+footer p {
+    font-family: 'robotoregular';
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+    color: lightslategray;     
+}
